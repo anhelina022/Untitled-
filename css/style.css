@@ -19,11 +19,22 @@ a {
 
 .header {
     display: flex;
-    
+
+}
+.container{
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    gap: 81px;
 }
 
 .navigation {
-    
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .navigation-menu {
@@ -33,15 +44,25 @@ a {
     line-height: 15px;
     letter-spacing: 0%;
     text-align: left;
+    padding-right: 50px;
 }
 
 .vector{
     width: 5px;
     height: 9px;
+    padding-right: 50px;
 }
 
 .nav-menu {
     display: none;
+    width: 83px;
+    height: 63px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-radius: 0px 0px 20px 20px;
+    background: rgb(255, 255, 255);
 }
 
 .navigation-menu-nav {
@@ -51,9 +72,10 @@ a {
     line-height: 15px;
     letter-spacing: 0%;
     text-align: left;
+
 }
 
-.navigation-menu-nav:hover ~ .nav-menu{
+.menu-list:hover > .nav-menu{
     display: block;
     position: absolute;
     box-sizing: border-box;
@@ -62,7 +84,6 @@ a {
     border-right: 1px solid rgb(0, 0, 0);
     border-radius: 0px 0px 20px 20px;
     background: rgb(255, 255, 255);
-
 }
 
 .menu {
