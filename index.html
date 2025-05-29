@@ -44,21 +44,23 @@
     </header>
 
     <main class="main">
-        <h2 class="title-main">Популярні інетрактивні ігри</h2>
+      <h2 class="title-main">Популярні інетрактивні ігри</h2>
       <hr class="line" />
 
       <h3 class="text-main">Перевір в який рік ти народився</h3>
       <div class="div">
-      <input type="text" placeholder="Введіть рік народження" class="input" />
-      <img src="./artem's images/Group 104.png" alt="104" class="v104">
-      <p class="text">Ви народилися у високосний рік!</p>
+        <input type="text" placeholder="Введіть рік народження" class="input" />
+        <img src="./artem's images/Group 104.png" alt="104" class="v104" />
+        <p class="text">Ви народилися у високосний рік!</p>
       </div>
       <hr class="line" />
 
       <h3 class="text-main">Вгадай число, яке загадав комп’ютер</h3>
-      <input type="text" placeholder="Введіть число" class="input" />
-        <img src="./artem's images/Group 104.png" alt="104" class="v104">
-      <p class="text">Вітаю, ви вгадали число! (number)</p>
+      <div class="div">
+        <input type="text" placeholder="Введіть число" class="input" />
+        <img src="./artem's images/Group 104.png" alt="104" class="v104" />
+        <p class="text">Вітаю, ви вгадали число! (number)</p>
+      </div>
       <hr class="line" />
 
       <h3 class="text-main">Камінь - ножиці - папір</h3>
@@ -87,10 +89,10 @@
       <h3 class="text-main">Калькулятор</h3>
       <div class="div-calculator">
         <button class="btn-calculator">Введіть число</button>
-          <button class="sign">+</button>
-          <button class="sign">*</button>
-          <button class="sign">-</button>
-          <button class="sign">/</button>
+        <button class="sign">+</button>
+        <button class="sign">*</button>
+        <button class="sign">-</button>
+        <button class="sign">/</button>
 
         <button class="btn-calculator">Введіть число</button>
         <button class="sign">=</button>
@@ -109,7 +111,7 @@
       <hr class="line" />
 
       <h3 class="text-main">Футбол</h3>
-      <img src="./images/fottball.svg" alt="fottball">
+      <img src="./images/fottball.svg" alt="fottball" />
       <hr class="line" />
 
       <h3 class="text-main">Введіть 3 числа</h3>
@@ -152,9 +154,34 @@
     </main>
 
     <footer class="footer">
-      <svg class="logo">
-        <use href="./img/Group 4.svg"></use>
-      </svg>
+      <div class="container-footer">
+        <img src="./img/Group 4.svg" alt="" class="logo-footer" />
+        <p class="text-footer">
+          Тел: +38 (123) 456 78 90 <br />
+          E-Mail: codingmagic@gmail.com <br />
+          Facebook: CodingMagic <br />
+          Twitter: CodingMagic <br />
+          Instagram: CodingMagic
+        </p>
+        <ul class="contacts-footer">
+          <li class="contacts-li">
+            <input
+              type="text"
+              placeholder="Ваша ел. адреса..."
+              class="input-footer"
+            />
+          </li>
+          <li class="contacts-li">
+            <button class="button-footer">Підписатись</button>
+          </li>
+          <li class="contacts-li">
+            <p class="comment">
+              *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+              сайті
+            </p>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="./index.js"></script>
   </body>
