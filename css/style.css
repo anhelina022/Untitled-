@@ -145,9 +145,6 @@ a {
 
 .line{
     width: 536px;
-    height: 0;
-    left: 452px;
-    top: 507px;
     margin-top: 36px;
 }
 
@@ -179,6 +176,7 @@ a {
     text-align: left;
     border: none;
     padding: 10px 45px 10px 10px;
+    outline: red;
 }
 
 .v104 {
@@ -199,6 +197,12 @@ a {
     letter-spacing: 0%;
     text-align: right;
     padding-left: 149px;
+}
+
+.div-rock-paper-scissors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .block{
