@@ -15,23 +15,23 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <img src="./img/Group 4.svg" alt="" class="logo" />
+        <img src="./img/Group 4.svg" alt="" class="logo-header" />
         <ul class="navigation">
-          <li class="navigation-list menu-list">
+          <li class="menu-list">
             <a href="" class="navigation-menu-nav">Інтерактив</a>
             <img src="./img/SVG/Vector.svg" alt="" class="vector" />
 
             <ul class="nav-menu">
-              <li><a href="#" class="menu">Числовий</a></li>
-              <li><a href="#" class="menu">Ігровий</a></li>
-              <li><a href="#" class="menu">Ознайомчий</a></li>
+              <li class="nav-menu-li"><a href="#" class="menu">Числовий</a></li>
+              <li class="nav-menu-li"><a href="#" class="menu">Ігровий</a></li>
+              <li class="nav-menu-li"><a href="#" class="menu">Ознайомчий</a></li>
             </ul>
           </li>
-          <li class="navigation-list">
-            <a href="" class="navigation-menu">Наша команда</a>
+          <li class="menu-list">
+            <a href="#" class="navigation-menu">Наша команда</a>
           </li>
-          <li class="navigation-list">
-            <a href="" class="navigation-menu">Контакти</a>
+          <li class="menu-list">
+            <a href="#" class="navigation-menu">Контакти</a>
           </li>
         </ul>
         <div class="right-section">
@@ -49,7 +49,7 @@
 
       <h3 class="text-main">Перевір в який рік ти народився</h3>
       <div class="div">
-        <input type="text" placeholder="Введіть рік народження" class="input" />
+        <input type="text" placeholder="Введіть рік народження" class="input" id="birthYear"/>
         <img src="./artem's images/Group 104.png" alt="104" class="v104" />
         <p class="text">Ви народилися у високосний рік!</p>
       </div>
@@ -104,12 +104,22 @@
       <hr class="line" />
 
       <h3 class="text-main">Калькулятор часу</h3>
-      <input type="text" placeholder="Введіть число" class="input" />
-
+      <div class="timeKalkul">
+          <div class="rodioninput-container">
+            <input type="text" placeholder="Введіть число" class="input" />
+              <button class="search-btn" onclick="calculateTime()">
+                <img src="./artem's images/Group 104.png" alt="Search">
+              </button>
+          </div>
+        <div class="output" id="outputTime">-----------------------</div>
+      </div>
       <hr class="line" />
 
       <h3 class="text-main">Google динозавр</h3>
-      <img src="./img/Google dino.png" alt="#" />
+      <div class="game">
+        <div id="dino"></div>
+        <div id="cactus"></div>
+      </div>
       <hr class="line" />
 
       <div class="footBall_box">
@@ -123,11 +133,11 @@
 
       <h3 class="text-main">Введіть 3 числа</h3>
       <div>
-        <button class="button-number">Введіть число</button>
-        <button class="button-number">Введіть число</button>
-        <button class="button-number">Введіть число</button>
+        <input class="input-number" placeholder="Введіть число">
+        <input class="input-number" placeholder="Введіть число">
+        <input class="input-number" placeholder="Введіть число">
       </div>
-      <p class="text-main">Найбільше число, яке ви ввели - (число)</p>
+      <p class="text-main-number">Найбільше число, яке ви ввели - (число)</p>
       <hr class="line" />
 
       <h3 class="text-main">Наша команда</h3>

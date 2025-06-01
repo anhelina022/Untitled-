@@ -29,12 +29,69 @@ a {
 .header-container {
     display: flex;
     gap: 81px;
+    height: 80px;
+}
+
+.logo-header {
+    width: 93px;
+    height: 38.15px;
+    padding: 21px 0 20.85px 175px;
 }
 
 .navigation {
     justify-content: space-between;
     align-items: center;
     display: flex;
+}
+
+.menu-list:hover > .nav-menu{
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.navigation-menu-nav {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: 'Montserrat Alternates';
+}
+
+.vector{
+    width: 5px;
+    height: 9px;
+    padding-right: 50px;
+}
+
+.nav-menu {
+    display: none;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.nav-menu-li {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.nav-menu-li:hover {
+    background: rgb(241, 241, 241);
+}
+
+.menu {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
 }
 
 .navigation-menu {
@@ -47,66 +104,12 @@ a {
     padding-right: 50px;
 }
 
-.vector{
-    width: 5px;
-    height: 9px;
-    padding-right: 50px;
-}
-
-.nav-menu {
-    display: none;
-    width: 83px;
-    height: 63px;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-    border-radius: 0px 0px 20px 20px;
-    background: rgb(255, 255, 255);
-}
-
-.navigation-menu-nav {
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0%;
-    text-align: left;
-
-}
-
-.menu-list:hover > .nav-menu{
-    display: block;
-    position: absolute;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-    border-radius: 0px 0px 20px 20px;
-    background: rgb(255, 255, 255);
-}
-
-.menu {
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-.menu:hover {
-    box-sizing: border-box;
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-    background: rgb(241, 241, 241);
-}
-
 .right-section {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .toggle-switch {
     width: 40px;
     height: 20px;
@@ -117,6 +120,9 @@ a {
     font-size: 14px;
     color: #000;
 }
+
+
+
 
 
                                                     /* MAIN */
@@ -177,6 +183,11 @@ a {
     border: none;
     padding: 10px 45px 10px 10px;
     outline: red;
+}
+
+.output {
+    margin-bottom: 17px;
+    font-size: 18px;
 }
 
 .v104 {
@@ -252,7 +263,7 @@ a {
     padding-bottom: 36px;
 }
 
-.btn-calculator {
+/* .btn-calculator {
     width: 135px;
     height: 35px;
     padding: 10px 20px 10px 20px;
@@ -267,7 +278,7 @@ a {
     border-radius: 20px;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     background: rgb(215, 215, 215);
-}
+} */
 
 .sign {
     width: 27px;
@@ -283,40 +294,34 @@ a {
     background: rgb(0, 0, 0);
 }
 
-.btn-result {
-    width: 118px;
-    height: 35px;
-    padding: 10px 20px 10px 20px;
-    border: none;
+.input-number{
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(215, 215, 215);
     color: rgb(126, 126, 126);
     font-family: 'Montserrat Alternates';
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0%;
-    text-align: left;
-    border-radius: 20px;
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(215, 215, 215);
-}
-
-.button-number{
+    text-align: center;
+    border: none;
+    padding: 10px /*20px 10px 20px*/;
+    margin: 0px 10px;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10;
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-    color: rgb(126, 126, 126);
-    font-family: 'Montserrat Alternates';
     flex-grow: 0;
-    margin: 0px 10px;
-    font-size: 12px;
+}
+
+.text-main-number {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat Alternates';
+    font-size: 16px;
     font-weight: 400;
-    line-height: 15px;
-    text-align: left;
-    border: none;
-    background: rgb(215, 215, 215);
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 36px 0 0;
 }
 
 .btn-scientist {
@@ -403,4 +408,65 @@ a {
     line-height: 7px;
     letter-spacing: 0%;
     padding-top: 18px;
+}
+
+
+
+
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url("../dino/dino.png");
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url("../dino/cactus.png");
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 1s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
 }
