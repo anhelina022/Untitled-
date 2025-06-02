@@ -15,7 +15,7 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <img src="./img/Group 4.svg" alt="" class="logo-header" />
+        <img src="./img/Group 4.png" alt="#" class="logo-header" />
         <ul class="navigation">
           <li class="menu-list">
             <a href="" class="navigation-menu-nav">Інтерактив</a>
@@ -24,7 +24,9 @@
             <ul class="nav-menu">
               <li class="nav-menu-li"><a href="#" class="menu">Числовий</a></li>
               <li class="nav-menu-li"><a href="#" class="menu">Ігровий</a></li>
-              <li class="nav-menu-li"><a href="#" class="menu">Ознайомчий</a></li>
+              <li class="nav-menu-li">
+                <a href="#" class="menu">Ознайомчий</a>
+              </li>
             </ul>
           </li>
           <li class="menu-list">
@@ -48,69 +50,95 @@
       <hr class="line" />
 
       <h3 class="text-main">Перевір в який рік ти народився</h3>
-      <div class="div">
-        <input type="text" placeholder="Введіть рік народження" class="input" id="birthYear"/>
-        <img src="./artem's images/Group 104.png" alt="104" class="v104" />
+      <div class="div-main">
+        <label for="" class="label-year">
+          <input
+            type="text"
+            placeholder="Введіть рік народження"
+            class="input"
+            id="birthYear"
+          />
+          <button class="click__year">
+            <img src="./artem's images/Group 104.png" alt="104" class="v104" />
+          </button>
+        </label>
+
         <p class="text">Ви народилися у високосний рік!</p>
       </div>
       <hr class="line" />
 
       <h3 class="text-main">Вгадай число, яке загадав комп’ютер</h3>
-      <div class="div">
-        <input type="text" placeholder="Введіть число" class="input" />
-        <img src="./artem's images/Group 104.png" alt="104" class="v104" />
+      <div class="div-main">
+        <label for="" class="label-number">
+          <input
+            type="text"
+            placeholder="Введіть число"
+            class="input-label-number"
+          />
+          <button class="click__number">
+            <img src="./artem's images/Group 104.png" alt="104" class="v104" />
+          </button>
+        </label>
+
         <p class="text">Вітаю, ви вгадали число! (number)</p>
       </div>
       <hr class="line" />
 
       <div class="div-rock-paper-scissors">
         <h3 class="text-main">Камінь - ножиці - папір</h3>
-      <div class="block">
-        <li class="black-block">
-          <img src="./img/stone 1.png" alt="stone" />
-        </li>
-        <li class="black-block">
-          <img src="./img/scissors 1.png" alt="scissors" />
-        </li>
-        <li class="black-block">
-          <img src="./img/paper 1.png" alt="paper" />
-        </li>
-        <li>
-          <p>
-            Рахунок: <br />
-            Комп’ютер - 0 <br />
-            Ви - 0
-          </p>
-        </li>
-      </div>
-      <p class="text">Ви виграли раунд!</p>
-      <button class="btn-computer">Варіант комп’ютера</button>
+        <div class="block">
+          <li class="black-block">
+            <img src="./img/stone 1.png" alt="stone" />
+          </li>
+          <li class="black-block">
+            <img src="./img/scissors 1.png" alt="scissors" />
+          </li>
+          <li class="black-block">
+            <img src="./img/paper 1.png" alt="paper" />
+          </li>
+          <li>
+            <p>
+              Рахунок: <br />
+              Комп’ютер - 0 <br />
+              Ви - 0
+            </p>
+          </li>
+        </div>
+        <p class="text">Ви виграли раунд!</p>
+        <button class="btn-computer">Варіант комп’ютера</button>
       </div>
       <hr class="line" />
 
       <h3 class="text-main">Калькулятор</h3>
       <div class="div-calculator">
-        <input class="input" placeholder="Введіть число">
-        <button class="sign">+</button>
-        <button class="sign">*</button>
-        <button class="sign">-</button>
-        <button class="sign">/</button>
+        <input class="input-calculator" placeholder="Введіть число" />
+        <div class="div-sign">
+          <button class="sign">+</button>
+          <button class="sign">*</button>
+          <button class="sign">-</button>
+          <button class="sign">/</button>
+        </div>
 
-        <input class="input" placeholder="Введіть число">
+        <input class="input-calculator" placeholder="Введіть число" />
         <button class="sign">=</button>
-        <input class="input" placeholder="Результат">
+        <input class="input-calculator" placeholder="Результат" />
       </div>
 
       <hr class="line" />
 
       <h3 class="text-main">Калькулятор часу</h3>
       <div class="timeKalkul">
-          <div class="rodioninput-container">
-            <input type="text" placeholder="Введіть число" class="input" id="inputNumber"/>
-              <button class="search-btn" onclick="calculateTime()">
-                <img src="./artem's images/Group 104.png" alt="Search">
-              </button>
-          </div>
+        <div class="rodioninput-container">
+          <input
+            type="text"
+            placeholder="Введіть число"
+            class="input"
+            id="inputNumber"
+          />
+          <button class="search-btn" onclick="calculateTime()">
+            <img src="./artem's images/Group 104.png" alt="Search" />
+          </button>
+        </div>
         <div class="output" id="outputTime">-----------------------</div>
       </div>
       <hr class="line" />
@@ -123,19 +151,19 @@
       <hr class="line" />
 
       <div class="footBall_box">
-        <h3 class="text-main" >Футбол</h3>
+        <h3 class="text-main">Футбол</h3>
         <div class="ball" id="ball">
-          <img class="ball-image" src="./images/ball.png" alt="ball">
+          <img class="ball-image" src="./images/ball.png" alt="ball" />
         </div>
-      <img src="./images/fottball.svg" alt="football" />
+        <img src="./images/fottball.svg" alt="football" />
       </div>
       <hr class="line" />
 
       <h3 class="text-main">Введіть 3 числа</h3>
       <div>
-        <input class="input-number" placeholder="Введіть число">
-        <input class="input-number" placeholder="Введіть число">
-        <input class="input-number" placeholder="Введіть число">
+        <input class="input-number" placeholder="Введіть число" />
+        <input class="input-number" placeholder="Введіть число" />
+        <input class="input-number" placeholder="Введіть число" />
       </div>
       <p class="text-main-number">Найбільше число, яке ви ввели - (число)</p>
       <hr class="line" />
@@ -172,7 +200,7 @@
 
     <footer class="footer">
       <div class="container-footer">
-        <img src="./img/Group 4.svg" alt="" class="logo-footer" />
+        <img src="./img/Group 4.png" alt="" class="logo-footer" />
         <p class="text-footer">
           Тел: +38 (123) 456 78 90 <br />
           E-Mail: codingmagic@gmail.com <br />

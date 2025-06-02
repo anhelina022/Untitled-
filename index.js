@@ -40,4 +40,4 @@ let isAlite = setInterval (function(){
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
         // alert("GAME OVER!!")
     }
-}, 10)
+}, 10);
