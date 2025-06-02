@@ -1,4 +1,4 @@
-let birthYear = ;
+// let birthYear = ;
 
 
 function calculateTime() {
