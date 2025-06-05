@@ -206,6 +206,38 @@ a {
   outline: red;
 }
 
+.timeKalkul {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.rodioninput-container {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
+}
+
+.input-timeKalkul {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: rgb(215, 215, 215);
+  color: rgb(126, 126, 126);
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  outline: red;
+  width: 120px;
+  height: 35px;
+}
+
 .output {
   margin-bottom: 17px;
   font-size: 18px;
@@ -238,7 +270,6 @@ a {
   border: none;
   padding: 10px 10px 10px 10px;
   outline: red;
-
 }
 
 .click__number {
@@ -263,7 +294,7 @@ a {
 .block {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
 }
 
@@ -429,6 +460,17 @@ a {
   padding: 36px 0 0;
 }
 
+.div-scientist {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
+
+/* .div-scientist-two {
+  
+} */
+
 .btn-scientist {
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
@@ -518,7 +560,7 @@ a {
 .game {
   width: 600px;
   height: 200px;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.5px solid #000;
   margin: auto;
 }
 
@@ -540,6 +582,7 @@ a {
   top: 110px;
   left: 580px;
   animation: cactusMov 1s infinite linear;
+  /* animation-play-state: paused; */
 }
 
 @keyframes cactusMov {
@@ -571,4 +614,18 @@ a {
   100% {
     top: 150px;
   }
+}
+
+.btn-dino {
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 10px 10px;
+  margin-right: 10px;
 }
