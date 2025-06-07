@@ -1,6 +1,10 @@
-// let birthYear = ;
+//Перевір в який рік ти народився
+let birthYear = getElementById("birthYear");
 
 
+
+
+//Калькулятор часу
 function calculateTime() {
     let seconds = parseInt(document.getElementById("inputNumber").value);
     if (isNaN(seconds) || seconds < 0) {
@@ -17,6 +21,8 @@ function calculateTime() {
 }
 
 
+
+// DINO
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 const startBtn = document.getElementById("startBtn");

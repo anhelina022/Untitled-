@@ -58,12 +58,12 @@
             class="input"
             id="birthYear"
           />
-          <button class="click__year">
+          <button class="click__year" onclick="checkLeapYear()">
             <img src="./artem's images/Group 104.png" alt="104" class="v104" />
           </button>
         </label>
 
-        <p class="text">Ви народилися у високосний рік!</p>
+        <span class="text" id="year"></span>
       </div>
       <hr class="line" />
 
@@ -74,34 +74,35 @@
             type="text"
             placeholder="Введіть число"
             class="input-label-number"
+            id="guessInput"
           />
-          <button class="click__number">
+          <button class="click__number" onclick="checkGuess()">
             <img src="./artem's images/Group 104.png" alt="104" class="v104" />
           </button>
         </label>
 
-        <p class="text">Вітаю, ви вгадали число! (number)</p>
+        <span class="text" id="message"></span>
       </div>
       <hr class="line" />
+
+      <!-- Камінь - ножиці - папір -->
 
       <h3 class="text-main">Камінь - ножиці - папір</h3>
       <div class="div-rock-paper-scissors">
         <ul class="block">
-          <li class="black-block">
+          <li class="black-block" onclick="play('rock')">
             <img src="./img/stone 1.png" alt="stone" class="photo" />
           </li>
-          <li class="black-block">
+          <li class="black-block" onclick="play('scissors')">
             <img src="./img/scissors 1.png" alt="scissors" class="photo" />
           </li>
-          <li class="black-block">
+          <li class="black-block" onclick="play('paper')">
             <img src="./img/paper 1.png" alt="paper" class="photo" />
           </li>
           <li class="text-block">
-            <p>
-              Рахунок: <br />
-              Комп’ютер - 0 <br />
-              Ви - 0
-            </p>
+            <p> Рахунок: </p>
+              <p>Комп’ютер: <span id="computer-score">0</span></p>
+              <p>Ви <span id="user-score">0</span></p>
           </li>
         </ul>
         <div class="computer-div">
@@ -180,36 +181,79 @@
       <hr class="line" />
 
       <h3 class="text-main">Обери вченого/их</h3>
-      <div class="div-scientist">
-        <button class="btn-scientist">Які вчені народилися в 19 ст.</button>
-        <button class="btn-scientist">Відсортувати вчених за алфавітом</button>
-        <button class="btn-scientist">
-          Відсортувати вчених за кількістю прожитих років
-        </button>
-        <button class="btn-scientist">
-          Знайти вченого, який народився найпізніше
-        </button>
-      </div>
+      <ul class="list">
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+        <li class="item-list"></li>
+      </ul>
 
-      <div class="div-scientist-two">
-        <button class="btn-scientist">
-          Знайти рік народження Albert Einshtein
-        </button>
-        <button class="btn-scientist">
-          Знайти вчених, прізвища яких починаються на на літеру “С”
-        </button>
-        <button class="btn-scientist">
-          Видалити всіх вчених, ім’я яких починається на “А”
-        </button>
-        <button class="btn-scientist">
-          Знайти вченого, який прожив найдовше і вченого,<br />
-          який прожив найменше
-        </button>
-      </div>
+      <div class="for-list">
+          <ul class="list2">
+            <button class="item-list2" id="list1">
+              <p class="txt-item-list2">Які вчені народилися в 19 ст.</p>
+            </button>
 
-      <button class="btn-scientist">
-        Знайти вчених, в яких співпадають перші літери імені і прізвища
-      </button>
+            <button class="item-list2" id="list2">
+              <p class="txt-item-list2">Відсортувати вчених за алфавітом</p>
+            </button>
+
+            <button class="item-list2" id="list3">
+              <p class="txt-item-list2"> Відсортувати вчених за кількістю прожитих років</p>
+            </button>
+
+            <button class="item-list2" id="list4">
+              <p class="txt-item-list2"> Знайти вченого, який народився найпізніше</p>
+            </button>
+                </ul>
+
+                <ul class="list2">
+                  <button class="item-list2" id="list5">
+                    <p class="txt-item-list2">
+                      Знайти рік народження Albert Einshtein
+                    </p>
+                  </button>
+
+                  <button class="item-list2" id="list6">
+                    <p class="txt-item-list2">
+                      Знайти вчених, прізвища яких починаються на літеру “С”
+                    </p>
+                  </button>
+
+                  <button class="item-list2" id="list7">
+                    <p class="txt-item-list2">
+                      Видалити всіх вчених, ім’я яких починається на “А”
+                    </p>
+                  </button>
+
+                  <button class="item-list2" id="list8">
+                    <p class="txt-item-list2">
+                      Знайти вченого, який прожив найдовше і вченого, який прожив
+                      найменше
+                    </p>
+                  </button>
+                </ul>
+              </div>
+      
+              <ul class="list2">
+                <li class="item-list2 last-item">
+                  <button class="item-list2" id="list9">
+                    <p class="txt-item-listTwo">
+                      1. Знайти вчених, в яких співпадають перші літери імені і
+                      прізвища
+                    </p>
+                  </button>
+                </li>
+              </ul>
+            </div>
     </main>
 
     <footer class="footer">
