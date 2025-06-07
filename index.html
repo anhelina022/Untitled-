@@ -100,9 +100,9 @@
             <img src="./img/paper 1.png" alt="paper" class="photo" />
           </li>
           <li class="text-block">
-            <p> Рахунок: </p>
-              <p>Комп’ютер: <span id="computer-score">0</span></p>
-              <p>Ви <span id="user-score">0</span></p>
+            <p>Рахунок:</p>
+            <p>Комп’ютер: <span id="computer-score">0</span></p>
+            <p>Ви <span id="user-score">0</span></p>
           </li>
         </ul>
         <div class="computer-div">
@@ -124,7 +124,7 @@
 
         <input class="input-calculator" placeholder="Введіть число" />
         <button class="sign-btn">=</button>
-        <input class="input-calculator" placeholder="Результат" />
+        <button class="input-calculator" placeholder="Результат" onclick="calculate()"></button>
       </div>
 
       <hr class="line" />
@@ -197,68 +197,69 @@
       </ul>
 
       <div class="for-list">
-          <ul class="list2">
-            <button class="item-list2" id="list1">
-              <p class="txt-item-list2">Які вчені народилися в 19 ст.</p>
+        <ul class="list2">
+          <button class="item-list2" id="list1">
+            <p class="txt-item-list2">Які вчені народилися в 19 ст.</p>
+          </button>
+
+          <button class="item-list2" id="list2">
+            <p class="txt-item-list2">Відсортувати вчених за алфавітом</p>
+          </button>
+
+          <button class="item-list2" id="list3">
+            <p class="txt-item-list2">
+              Відсортувати вчених за кількістю прожитих років
+            </p>
+          </button>
+
+          <button class="item-list2" id="list4">
+            <p class="txt-item-list2">
+              Знайти вченого, який народився найпізніше
+            </p>
+          </button>
+        </ul>
+
+        <ul class="list2">
+          <button class="item-list2" id="list5">
+            <p class="txt-item-list2">Знайти рік народження Albert Einshtein</p>
+          </button>
+
+          <button class="item-list2" id="list6">
+            <p class="txt-item-list2">
+              Знайти вчених, прізвища яких починаються на літеру “С”
+            </p>
+          </button>
+
+          <button class="item-list2" id="list7">
+            <p class="txt-item-list2">
+              Видалити всіх вчених, ім’я яких починається на “А”
+            </p>
+          </button>
+
+          <button class="item-list2" id="list8">
+            <p class="txt-item-list2">
+              Знайти вченого, який прожив найдовше і вченого, який прожив
+              найменше
+            </p>
+          </button>
+        </ul>
+
+        <ul class="list2">
+          <li class="item-list2 last-item">
+            <button class="item-list2" id="list9">
+              <p class="txt-item-listTwo">
+                1. Знайти вчених, в яких співпадають перші літери імені і
+                прізвища
+              </p>
             </button>
-
-            <button class="item-list2" id="list2">
-              <p class="txt-item-list2">Відсортувати вчених за алфавітом</p>
-            </button>
-
-            <button class="item-list2" id="list3">
-              <p class="txt-item-list2"> Відсортувати вчених за кількістю прожитих років</p>
-            </button>
-
-            <button class="item-list2" id="list4">
-              <p class="txt-item-list2"> Знайти вченого, який народився найпізніше</p>
-            </button>
-                </ul>
-
-                <ul class="list2">
-                  <button class="item-list2" id="list5">
-                    <p class="txt-item-list2">
-                      Знайти рік народження Albert Einshtein
-                    </p>
-                  </button>
-
-                  <button class="item-list2" id="list6">
-                    <p class="txt-item-list2">
-                      Знайти вчених, прізвища яких починаються на літеру “С”
-                    </p>
-                  </button>
-
-                  <button class="item-list2" id="list7">
-                    <p class="txt-item-list2">
-                      Видалити всіх вчених, ім’я яких починається на “А”
-                    </p>
-                  </button>
-
-                  <button class="item-list2" id="list8">
-                    <p class="txt-item-list2">
-                      Знайти вченого, який прожив найдовше і вченого, який прожив
-                      найменше
-                    </p>
-                  </button>
-                </ul>
-              </div>
-      
-              <ul class="list2">
-                <li class="item-list2 last-item">
-                  <button class="item-list2" id="list9">
-                    <p class="txt-item-listTwo">
-                      1. Знайти вчених, в яких співпадають перші літери імені і
-                      прізвища
-                    </p>
-                  </button>
-                </li>
-              </ul>
-            </div>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="container-footer">
-        <img src="./img/Group 4.png" alt="" class="logo-footer" />
+        <img src="./img/Group 4.png" alt="logo" class="logo-footer" />
         <p class="text-footer">
           Тел: +38 (123) 456 78 90 <br />
           E-Mail: codingmagic@gmail.com <br />
