@@ -49,6 +49,7 @@
       <h2 class="title-main">Популярні інетрактивні ігри</h2>
       <hr class="line" />
 
+      <!-- Перевір в який рік ти народився -->
       <h3 class="text-main">Перевір в який рік ти народився</h3>
       <div class="div-main">
         <label for="" class="label-year">
@@ -66,6 +67,8 @@
         <span class="text" id="textId"></span>
       </div>
       <hr class="line" />
+
+      <!-- Вгадай число, яке загадав комп’ютер -->
 
       <h3 class="text-main">Вгадай число, яке загадав комп’ютер</h3>
       <div class="div-main">
@@ -88,7 +91,30 @@
       <!-- Камінь - ножиці - папір -->
 
       <h3 class="text-main">Камінь - ножиці - папір</h3>
-      <div class="div-rock-paper-scissors">
+      <div class="choices">
+  
+          <div class="choice" onclick="play('rock')">
+              <img src="./img/stone 1.png" alt="Камінь">
+          </div>
+          <div class="choice" onclick="play('scissors')">
+              <img src="./img/scissors 1.png" alt="Ножиці">
+          </div>
+          <div class="choice" onclick="play('paper')">
+              <img src="./img/paper 1.png" alt="Папір">
+          </div>
+      </div>
+  
+      <div class="result"></div>
+  
+      <div class="score">
+          <p>Рахунок:</p>
+          <p>Комп'ютер: <span id="computer-score">0</span></p>
+          <p>Ви: <span id="user-score">0</span></p>
+      </div>
+  
+      <button class="btn-computer" onclick="computerPlay()">Варіант комп'ютера</button>
+
+      <!-- <div class="div-rock-paper-scissors">
         <ul class="block">
           <li class="black-block" onclick="play('rock')">
             <img src="./img/stone 1.png" alt="stone" class="photo" />
@@ -99,6 +125,7 @@
           <li class="black-block" onclick="play('paper')">
             <img src="./img/paper 1.png" alt="paper" class="photo" />
           </li>
+          <li><p id="result"></p></li>
           <li class="text-block">
             <p>Рахунок:</p>
             <p>Комп’ютер: <span id="computer-score">0</span></p>
@@ -109,7 +136,7 @@
           <p class="text-computer"></p>
           <button class="btn-computer">Варіант комп’ютера</button>
         </div>
-      </div>
+      </div> -->
       <hr class="line" />
 
       <h3 class="text-main">Калькулятор</h3>
