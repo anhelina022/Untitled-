@@ -1,5 +1,43 @@
 //Перевір в який рік ти народився
-let birthYear = getElementById("birthYear");
+function checkLeapYear() {
+    let year = document.getElementById("birthYear").value;
+    let text = document.getElementById("textId");
+
+    const isLeapYear = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+
+    if (isLeapYear) {
+        text.innerHTML = "Ви народилися у високосний рік!";
+        text.style.color = "green";
+    } else {
+        text.innerHTML = 'Ви народилися у звичайному році!';
+        text.style.color = 'red';
+    }
+}
+
+function generateRandomNumber() {
+    return Math.floor(Math.random() * 10) + 1;
+}
+
+let randomNumber = generateRandomNumber();
+
+function checkGuess() {
+    const guess = parseInt(document.getElementById("guessInput").value);
+    const message = document.getElementById("message");
+
+    if (guess === randomNumber) {
+        message.innerHTML = `Вітаю, ви вгадали число! (${randomNumber})`;
+        message.style.color = "green";
+    } else if(guess > 10 || guess < 0){
+        message.innerHTML = 'Невірно!';
+        message.style.color = 'red';
+    } else{
+        message.innerHTML = `Невірно! Спробуйте ще раз. Число було (${randomNumber})`;
+        message.style.color = 'red';
+    }
+    randomNumber = generateRandomNumber();
+}
+
+
 
 
 
