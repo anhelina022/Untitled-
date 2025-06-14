@@ -78,6 +78,48 @@ function computerPlay() {
   alert(`Комп'ютер вибрав: ${computerChoice}`);
 }
 
+// Калькулятор
+
+function calculate(operation) {
+  let a = parseFloat(document.getElementById("input-number").value);
+  let b = parseFloat(document.getElementById("input-field").value);
+  let result;
+
+  document.getElementById("plusButton").addEventListener("click", function () {
+    calculate("plus");
+  });
+
+  document.getElementById("timesButton").addEventListener("click", function () {
+    calculate("times");
+  });
+
+  document.getElementById("minusButton").addEventListener("click", function () {
+    calculate("minus");
+  });
+
+  document
+    .getElementById("divideButton")
+    .addEventListener("click", function () {
+      calculate("divide");
+    });
+
+  if (operation === "plus") {
+    result = a + b;
+  } else if (operation === "minus") {
+    result = a - b;
+  } else if (operation === "times") {
+    result = a * b;
+  } else if (operation === "divide") {
+    if (b === 0) {
+      result = "Помилка: ділення на нуль";
+    } else {
+      result = a / b;
+    }
+  }
+
+  document.getElementById("result").innerHTML = result;
+}
+
 //Калькулятор часу
 function calculateTime() {
   let seconds = parseInt(document.getElementById("inputNumber").value);

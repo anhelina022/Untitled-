@@ -92,66 +92,57 @@
 
       <h3 class="text-main">Камінь - ножиці - папір</h3>
       <div class="choices">
-  
-          <div class="choice" onclick="play('rock')">
-              <img src="./img/stone 1.png" alt="Камінь">
-          </div>
-          <div class="choice" onclick="play('scissors')">
-              <img src="./img/scissors 1.png" alt="Ножиці">
-          </div>
-          <div class="choice" onclick="play('paper')">
-              <img src="./img/paper 1.png" alt="Папір">
-          </div>
-      </div>
-  
-      <div class="result"></div>
-  
-      <div class="score">
-          <p>Рахунок:</p>
-          <p>Комп'ютер: <span id="computer-score">0</span></p>
-          <p>Ви: <span id="user-score">0</span></p>
-      </div>
-  
-      <button class="btn-computer" onclick="computerPlay()">Варіант комп'ютера</button>
-
-      <!-- <div class="div-rock-paper-scissors">
-        <ul class="block">
-          <li class="black-block" onclick="play('rock')">
-            <img src="./img/stone 1.png" alt="stone" class="photo" />
-          </li>
-          <li class="black-block" onclick="play('scissors')">
-            <img src="./img/scissors 1.png" alt="scissors" class="photo" />
-          </li>
-          <li class="black-block" onclick="play('paper')">
-            <img src="./img/paper 1.png" alt="paper" class="photo" />
-          </li>
-          <li><p id="result"></p></li>
-          <li class="text-block">
-            <p>Рахунок:</p>
-            <p>Комп’ютер: <span id="computer-score">0</span></p>
-            <p>Ви <span id="user-score">0</span></p>
-          </li>
-        </ul>
-        <div class="computer-div">
-          <p class="text-computer"></p>
-          <button class="btn-computer">Варіант комп’ютера</button>
+        <div class="choice" onclick="play('rock')">
+          <img src="./img/stone 1.png" alt="Камінь" />
         </div>
-      </div> -->
+        <div class="choice" onclick="play('scissors')">
+          <img src="./img/scissors 1.png" alt="Ножиці" />
+        </div>
+        <div class="choice" onclick="play('paper')">
+          <img src="./img/paper 1.png" alt="Папір" />
+        </div>
+      </div>
+
+      <div class="result"></div>
+
+      <div class="score">
+        <p>Рахунок:</p>
+        <p>Комп'ютер: <span id="computer-score">0</span></p>
+        <p>Ви: <span id="user-score">0</span></p>
+      </div>
+
+      <button class="btn-computer" onclick="computerPlay()">
+        Варіант комп'ютера
+      </button>
       <hr class="line" />
 
       <h3 class="text-main">Калькулятор</h3>
       <div class="div-calculator">
-        <input class="input-calculator" placeholder="Введіть число" />
+        <input
+          class="input-calculator"
+          placeholder="Введіть число"
+          id="input-number"
+        />
         <div class="div-sign">
-          <button class="sign">+</button>
-          <button class="sign">*</button>
-          <button class="sign">-</button>
-          <button class="sign">/</button>
+          <button class="sign" id="plusButton">+</button>
+          <button class="sign" id="timesButton">*</button>
+          <button class="sign" id="minusButton">-</button>
+          <button class="sign" id="divideButton">/</button>
         </div>
 
-        <input class="input-calculator" placeholder="Введіть число" />
+        <input
+          class="input-calculator"
+          placeholder="Введіть число"
+          id="input-field"
+        />
         <button class="sign-btn">=</button>
-        <button class="input-calculator" placeholder="Результат" onclick="calculate()">Результат</button>
+        <button class="input-calculator" onclick="calculate()">
+          Результат
+        </button>
+
+        <div class="result">
+          <p>Результат: <span id="result">0</span></p>
+        </div>
       </div>
 
       <hr class="line" />
@@ -204,7 +195,161 @@
       <p class="text-main-number">Найбільше число, яке ви ввели - (число)</p>
       <hr class="line" />
 
+      <!-- Наша команда -->
+
       <h3 class="text-main">Наша команда</h3>
+      <div class="team-container">
+        <div class="buttton_click_slide_box">
+          <a class="prev" onclick="plusSlides(-1)">
+            <img
+              class="imgForButton"
+              src="./images/right_button.svg"
+              alt="button"
+            />
+          </a>
+
+          <div class="use_box">
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/DONKEY.jpg"
+                alt="DONKEY"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name"></p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/ВОЛК.jpg"
+                alt="ВОЛК"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">ВОЛК</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/ДЖЕРРУ.jpg"
+                alt="ДЖЕРРУ"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">ДЖЕРРУ</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/Дюдюка Барбидокская.jpg"
+                alt="/Дюдюка Барбидокская"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">/Дюдюка Барбидокская</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/СОВУНЬЯ.jpg"
+                alt="СОВУНЬЯ"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">СОВУНЬЯ</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/ТОМ.jpg"
+                alt="ТОМ"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">ТОМ</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/чип и дейл.jpg"
+                alt="чип и дейл"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">чип и дейл</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                class="imgForSlider"
+                src="./img/perticipants/ЮЛИЙ.jpg"
+                alt="ЮЛИЙ"
+                class="photo"
+              />
+              <div class="text-fade">
+                <p class="name">ЮЛИЙ</p>
+                <p class="text_name">
+                  Інформація про роботу, яку він/вона виконав/ла
+                </p>
+              </div>
+            </div>
+
+            <a class="next" onclick="plusSlides(1)">
+              <img
+                class="imgForButton"
+                src="./images/left_button.svg"
+                alt="button"
+              />
+            </a>
+          </div>
+
+          <div class="style_dot" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+        </div>
+      </div>
       <hr class="line" />
 
       <h3 class="text-main">Обери вченого/их</h3>
