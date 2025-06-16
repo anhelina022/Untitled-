@@ -138,6 +138,42 @@ function calculateTime() {
   ).textContent = `${days} дн. ${hours}:${minutes}:${seconds}`;
 }
 
+// Введіть 3 числа
+
+const input1 = document.getElementById("input1");
+    const input2 = document.getElementById("input2");
+    const input3 = document.getElementById("input3");
+    const output = document.getElementById("myParagraph");
+
+    // Додаємо слухачі подій input
+    input1.addEventListener("input", handleInput);
+    input2.addEventListener("input", handleInput);
+    input3.addEventListener("input", handleInput);
+
+    function handleInput() {
+      const val1 = input1.value.trim();
+      const val2 = input2.value.trim();
+      const val3 = input3.value.trim();
+
+      const num1 = parseFloat(val1);
+      const num2 = parseFloat(val2);
+      const num3 = parseFloat(val3);
+
+      if (val1 === "" || val2 === "" || val3 === "") {
+        output.textContent = "Введіть усі три числа.";
+        return;
+      }
+
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+        output.textContent = "Будь ласка, введіть тільки числові значення.";
+        return;
+      }
+
+      const max = Math.max(num1, num2, num3);
+      output.textContent = `Найбільше число, яке ви ввели - ${max}`;
+    }
+
+
 // DINO
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
