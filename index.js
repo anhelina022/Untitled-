@@ -173,6 +173,18 @@ const input1 = document.getElementById("input1");
       output.textContent = `Найбільше число, яке ви ввели - ${max}`;
     }
 
+    // Футбол
+
+const field = document.getElementById('field');
+const ball = document.getElementById('ball');
+const ballRadius = ball.offsetWidth / 2;
+field.addEventListener('click', ({ clientX, clientY }) => {
+    const { left, top, width, height } = field.getBoundingClientRect();
+    const x = Math.min(Math.max(clientX - left - ballRadius, 0), width - ball.offsetWidth);
+    const y = Math.min(Math.max(clientY - top - ballRadius, 0), height - ball.offsetHeight);
+    Object.assign(ball.style, { left: `${x}px`, top: `${y}px` });
+});
+
 
 // DINO
 const dino = document.getElementById("dino");
