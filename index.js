@@ -141,50 +141,55 @@ function calculateTime() {
 // Введіть 3 числа
 
 const input1 = document.getElementById("input1");
-    const input2 = document.getElementById("input2");
-    const input3 = document.getElementById("input3");
-    const output = document.getElementById("myParagraph");
+const input2 = document.getElementById("input2");
+const input3 = document.getElementById("input3");
+const output = document.getElementById("myParagraph");
 
-    // Додаємо слухачі подій input
-    input1.addEventListener("input", handleInput);
-    input2.addEventListener("input", handleInput);
-    input3.addEventListener("input", handleInput);
+// Додаємо слухачі подій input
+input1.addEventListener("input", handleInput);
+input2.addEventListener("input", handleInput);
+input3.addEventListener("input", handleInput);
 
-    function handleInput() {
-      const val1 = input1.value.trim();
-      const val2 = input2.value.trim();
-      const val3 = input3.value.trim();
+function handleInput() {
+  const val1 = input1.value.trim();
+  const val2 = input2.value.trim();
+  const val3 = input3.value.trim();
 
-      const num1 = parseFloat(val1);
-      const num2 = parseFloat(val2);
-      const num3 = parseFloat(val3);
+  const num1 = parseFloat(val1);
+  const num2 = parseFloat(val2);
+  const num3 = parseFloat(val3);
 
-      if (val1 === "" || val2 === "" || val3 === "") {
-        output.textContent = "Введіть усі три числа.";
-        return;
-      }
+  if (val1 === "" || val2 === "" || val3 === "") {
+    output.textContent = "Введіть усі три числа.";
+    return;
+  }
 
-      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-        output.textContent = "Будь ласка, введіть тільки числові значення.";
-        return;
-      }
+  if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+    output.textContent = "Будь ласка, введіть тільки числові значення.";
+    return;
+  }
 
-      const max = Math.max(num1, num2, num3);
-      output.textContent = `Найбільше число, яке ви ввели - ${max}`;
-    }
+  const max = Math.max(num1, num2, num3);
+  output.textContent = `Найбільше число, яке ви ввели - ${max}`;
+}
 
-    // Футбол
+// Футбол
 
-const field = document.getElementById('field');
-const ball = document.getElementById('ball');
+const field = document.getElementById("field");
+const ball = document.getElementById("ball");
 const ballRadius = ball.offsetWidth / 2;
-field.addEventListener('click', ({ clientX, clientY }) => {
-    const { left, top, width, height } = field.getBoundingClientRect();
-    const x = Math.min(Math.max(clientX - left - ballRadius, 0), width - ball.offsetWidth);
-    const y = Math.min(Math.max(clientY - top - ballRadius, 0), height - ball.offsetHeight);
-    Object.assign(ball.style, { left: `${x}px`, top: `${y}px` });
+field.addEventListener("click", ({ clientX, clientY }) => {
+  const { left, top, width, height } = field.getBoundingClientRect();
+  const x = Math.min(
+    Math.max(clientX - left - ballRadius, 0),
+    width - ball.offsetWidth
+  );
+  const y = Math.min(
+    Math.max(clientY - top - ballRadius, 0),
+    height - ball.offsetHeight
+  );
+  Object.assign(ball.style, { left: `${x}px`, top: `${y}px` });
 });
-
 
 // DINO
 const dino = document.getElementById("dino");
@@ -243,113 +248,245 @@ window.onload = () => {
   cactus.style.animationPlayState = "paused";
 };
 
-
 //Обери вченого/их
 
-
-
-const scientists = [ 
-    { 
-        name: "Albert", 
-        surname: "Einstein", 
-        born: 1879, 
-        dead: 1955, 
-        id: 1 
-    }, 
-    { 
-        name: "Isaac", 
-        surname: "Newton", 
-        born: 1643, 
-        dead: 1727, 
-        id: 2 
-    }, 
-    { 
-        name: "Galileo", 
-        surname: "Galilei", 
-        born: 1564, 
-        dead: 1642, 
-        id: 3 
-    }, 
-    { 
-        name: "Marie", 
-        surname: "Curie", 
-        born: 1867, 
-        dead: 1934, 
-        id: 4 
-    }, 
-    { 
-        name: "Johannes", 
-        surname: "Kepler", 
-        born: 1571, 
-        dead: 1630, 
-        id: 5 
-    }, 
-    { 
-        name: "Nicolaus", 
-        surname: "Copernicus", 
-        born: 1473, 
-        dead: 1543, 
-        id: 6 
-    }, 
-    { 
-        name: "Max", 
-        surname: "Planck", 
-        born: 1858, 
-        dead: 1947, 
-        id: 7 
-    }, 
-    { 
-        name: "Katherine", 
-        surname: "Blodgett", 
-        born: 1898, 
-        dead: 1979, 
-        id: 8 
-    }, 
-    { 
-        name: "Ada", 
-        surname: "Lovelace", 
-        born: 1815, 
-        dead: 1852, 
-        id: 9 
-    }, 
-    { 
-        name: "Sarah E.", 
-        surname: "Goode", 
-        born: 1855, 
-        dead: 1905, 
-        id: 10 
-    }, 
-    { 
-        name: "Lise", 
-        surname: "Meitner", 
-        born: 1878, 
-        dead: 1968, 
-        id: 11 
-    }, 
-    { 
-        name: "Hanna", 
-        surname: "Hammarström", 
-        born: 1829, 
-        dead: 1909, 
-        id: 12 
-    } 
+const scientists = [
+  {
+    name: "Albert",
+    surname: "Einstein",
+    born: 1879,
+    dead: 1955,
+    id: 1,
+  },
+  {
+    name: "Isaac",
+    surname: "Newton",
+    born: 1643,
+    dead: 1727,
+    id: 2,
+  },
+  {
+    name: "Galileo",
+    surname: "Galilei",
+    born: 1564,
+    dead: 1642,
+    id: 3,
+  },
+  {
+    name: "Marie",
+    surname: "Curie",
+    born: 1867,
+    dead: 1934,
+    id: 4,
+  },
+  {
+    name: "Johannes",
+    surname: "Kepler",
+    born: 1571,
+    dead: 1630,
+    id: 5,
+  },
+  {
+    name: "Nicolaus",
+    surname: "Copernicus",
+    born: 1473,
+    dead: 1543,
+    id: 6,
+  },
+  {
+    name: "Max",
+    surname: "Planck",
+    born: 1858,
+    dead: 1947,
+    id: 7,
+  },
+  {
+    name: "Katherine",
+    surname: "Blodgett",
+    born: 1898,
+    dead: 1979,
+    id: 8,
+  },
+  {
+    name: "Ada",
+    surname: "Lovelace",
+    born: 1815,
+    dead: 1852,
+    id: 9,
+  },
+  {
+    name: "Sarah E.",
+    surname: "Goode",
+    born: 1855,
+    dead: 1905,
+    id: 10,
+  },
+  {
+    name: "Lise",
+    surname: "Meitner",
+    born: 1878,
+    dead: 1968,
+    id: 11,
+  },
+  {
+    name: "Hanna",
+    surname: "Hammarström",
+    born: 1829,
+    dead: 1909,
+    id: 12,
+  },
 ];
 
-// let age = scientists.reduce(sum, scientists) => {
-//   return ;
-// };
+let ageSum = scientists.reduce((sum, scientists) => {
+  return sum + (scientists.born - scientists.dead);
+});
 
-const items = document.querySelectorAll('.item-list');
-const btn = document.getElementById("list1");
+const scientistItemList = document.querySelectorAll(".item-list");
 
-btn.addEventListener("click", (event) =>{
-  let scientistTh19 = scientists.filter(
-  (scientist) => scientist.born >= 1801
+// 1
+
+const scientistswasborn = document.getElementById("list1");
+scientistswasborn.addEventListener("click", (event) => {
+  let scientistsNot19th = scientists.filter(
+    (scientist) => scientist.born >= 1801
   );
-  items.forEach((element, idx) => {
-    if (scientistTh19[idx]) {
-      element.textContent = `${scientistTh19[idx].name} ${scientistTh19[idx].surname}`;
+  scientistItemList.forEach((element, idx) => {
+    if (scientistsNot19th[idx]) {
+      element.textContent = `${scientistsNot19th[idx].name} ${scientistsNot19th[idx].surname}`;
     }
   });
 });
 
+//2
+
+const sorfOfNames = document.getElementById("list2");
+sorfOfNames.addEventListener("click", (event) => {
+  const filteredScientists = scientists.sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
+  let albertEinsteinWasBorn = scientists.find(
+    (scientist) => scientist.surname === "Einstein"
+  );
+
+  if (albertEinsteinWasBorn && scientistItemList.length > 0) {
+    scientistItemList[0].style.backgroundImage = `url("${albertEinsteinWasBorn.url}")`;
+  }
+});
+
+//3
+
+const sortOfDaysGone = document.getElementById("list3");
+sortOfDaysGone.addEventListener("click", (event) => {
+  let sortedByAge = scientists.sort(
+    (a, b) => a.dead - a.born - (b.dead - b.born)
+  );
+  scientistItemList.forEach((element, idx) => {
+    if (sortedByAge[idx]) {
+      element.textContent = `${sortedByAge[idx].name} ${sortedByAge[idx].surname}`;
+    }
+  });
+});
+
+//4
+
+const wasBornLeiter = document.getElementById("list4");
+wasBornLeiter.addEventListener("click", () => {
+  scientistItemList.forEach((element) => {
+    element.textContent = "";
+  });
+  let youngestScientist = scientists.reduce(
+    (youngest, scientist) =>
+      scientist.born > youngest.born ? scientist : youngest,
+    scientists[0]
+  );
+
+  if (scientistItemList.length > 0) {
+    scientistItemList[0].textContent = `${youngestScientist.name} ${youngestScientist.surname}`;
+  }
+});
+
+// 5 
+
+const einsteinBorn = document.getElementById("list5");
+einsteinBorn.addEventListener('click', () => {
+  scientistItemList.forEach((element) => {
+    element.textContent = "";
+  });
+
+    let albertEinsteinWasBorn = scientists.find(
+      (scientist) => scientist.surname === "Einstein"
+    );
+});
+
+const secondNameC = document.getElementById("list6");
+  secondNameC.addEventListener("click", (event) => {
+    scientistItemList.forEach((element) => {
+      element.textContent = "";
+    });
+    const scientistsWithC = scientists.filter(
+      (scientist) => scientist.surname[0] === "C"
+    );
+    scientistItemList.forEach((element, idx) => {
+      if (scientistsWithC[idx]) {
+        element.textContent = `${scientistsWithC[idx].name} ${scientistsWithC[idx].surname}`;
+      }
+    });
+  });
+
+  const filterOfNamesA = document.getElementById("list7");
+  filterOfNamesA.addEventListener("click", (event) => {
+    const updatedScientists = scientists.filter(
+      (scientist) => scientist.name[0] !== "A"
+    );
+    scientistItemList.forEach((element) => {
+      element.textContent = "";
+    });
+    scientistItemList.forEach((element, idx) => {
+      if (updatedScientists[idx]) {
+        element.textContent = `${updatedScientists[idx].name} ${updatedScientists[idx].surname}`;
+      }
+    });
+  });
+  const findTheScientistsHadLife = document.getElementById("list8");
+  findTheScientistsHadLife.addEventListener("click", (event) => {});
+  const firstLetter = document.getElementById("list9");
+  firstLetter.addEventListener("click", (event) => {
+    console.log();
+  });
+  
+  const namesFirstLetter = document.getElementById("list9");
+  
+  namesFirstLetter.addEventListener("click", () => {
+    const filteredScientists = scientists.filter(
+      (scientist) =>
+        scientist.name[0].toUpperCase() === scientist.surname[0].toUpperCase()
+    );
+  
+    scientistItemList.forEach((element) => {
+      element.textContent = "";
+    });
+  
+    scientistItemList.forEach((element, idx) => {
+      if (filteredScientists[idx]) {
+        element.textContent = `${filteredScientists[idx].name} ${filteredScientists[idx].surname}`;
+      }
+    });
+  });
+  // модалка
+  let buttonForModal = document.querySelector(".buttons");
+  buttonForModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.style.display = "block";
+  });
+  let closeModal = document.getElementById("modal_close");
+  closeModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.style.display = "none";
+  });
+  let modalBackgroung = document.getElementById("modal_backgroung");
+  
+
+  modalBackgroung.addEventListener("click", (event) => {
+    modal.style.display = "none";
+  });
