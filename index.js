@@ -406,87 +406,73 @@ wasBornLeiter.addEventListener("click", () => {
   }
 });
 
-// 5 
+// 5
 
 const einsteinBorn = document.getElementById("list5");
-einsteinBorn.addEventListener('click', () => {
+einsteinBorn.addEventListener("click", () => {
   scientistItemList.forEach((element) => {
     element.textContent = "";
   });
 
-    let albertEinsteinWasBorn = scientists.find(
-      (scientist) => scientist.surname === "Einstein"
-    );
+  let albertEinsteinWasBorn = scientists.find(
+    (scientist) => scientist.surname === "Einstein"
+  );
 });
 
 const secondNameC = document.getElementById("list6");
-  secondNameC.addEventListener("click", (event) => {
-    scientistItemList.forEach((element) => {
-      element.textContent = "";
-    });
-    const scientistsWithC = scientists.filter(
-      (scientist) => scientist.surname[0] === "C"
-    );
-    scientistItemList.forEach((element, idx) => {
-      if (scientistsWithC[idx]) {
-        element.textContent = `${scientistsWithC[idx].name} ${scientistsWithC[idx].surname}`;
-      }
-    });
+secondNameC.addEventListener("click", (event) => {
+  scientistItemList.forEach((element) => {
+    element.textContent = "";
+  });
+  const scientistsWithC = scientists.filter(
+    (scientist) => scientist.surname[0] === "C"
+  );
+  scientistItemList.forEach((element, idx) => {
+    if (scientistsWithC[idx]) {
+      element.textContent = `${scientistsWithC[idx].name} ${scientistsWithC[idx].surname}`;
+    }
+  });
+});
+
+const filterOfNamesA = document.getElementById("list7");
+filterOfNamesA.addEventListener("click", (event) => {
+  const updatedScientists = scientists.filter(
+    (scientist) => scientist.name[0] !== "A"
+  );
+  scientistItemList.forEach((element) => {
+    element.textContent = "";
+  });
+  scientistItemList.forEach((element, idx) => {
+    if (updatedScientists[idx]) {
+      element.textContent = `${updatedScientists[idx].name} ${updatedScientists[idx].surname}`;
+    }
+  });
+});
+
+//8
+
+const findTheScientistsHadLife = document.getElementById("list8");
+findTheScientistsHadLife.addEventListener("click", () => {});
+
+const firstLetter = document.getElementById("list9");
+firstLetter.addEventListener("click", (event) => {
+  console.log();
+});
+
+const namesFirstLetter = document.getElementById("list9");
+
+namesFirstLetter.addEventListener("click", () => {
+  const filteredScientists = scientists.filter((scientist) =>
+    scientist.name[0].toUpperCase()
+  );
+
+  scientistItemList.forEach((element) => {
+    element.textContent = "";
   });
 
-  const filterOfNamesA = document.getElementById("list7");
-  filterOfNamesA.addEventListener("click", (event) => {
-    const updatedScientists = scientists.filter(
-      (scientist) => scientist.name[0] !== "A"
-    );
-    scientistItemList.forEach((element) => {
-      element.textContent = "";
-    });
-    scientistItemList.forEach((element, idx) => {
-      if (updatedScientists[idx]) {
-        element.textContent = `${updatedScientists[idx].name} ${updatedScientists[idx].surname}`;
-      }
-    });
+  scientistItemList.forEach((element, idx) => {
+    if (filteredScientists[idx]) {
+      element.textContent = `${filteredScientists[idx].name} ${filteredScientists[idx].surname}`;
+    }
   });
-  const findTheScientistsHadLife = document.getElementById("list8");
-  findTheScientistsHadLife.addEventListener("click", (event) => {});
-  const firstLetter = document.getElementById("list9");
-  firstLetter.addEventListener("click", (event) => {
-    console.log();
-  });
-  
-  const namesFirstLetter = document.getElementById("list9");
-  
-  namesFirstLetter.addEventListener("click", () => {
-    const filteredScientists = scientists.filter(
-      (scientist) =>
-        scientist.name[0].toUpperCase() === scientist.surname[0].toUpperCase()
-    );
-  
-    scientistItemList.forEach((element) => {
-      element.textContent = "";
-    });
-  
-    scientistItemList.forEach((element, idx) => {
-      if (filteredScientists[idx]) {
-        element.textContent = `${filteredScientists[idx].name} ${filteredScientists[idx].surname}`;
-      }
-    });
-  });
-  // модалка
-  let buttonForModal = document.querySelector(".buttons");
-  buttonForModal.addEventListener("click", (event) => {
-    event.preventDefault();
-    modal.style.display = "block";
-  });
-  let closeModal = document.getElementById("modal_close");
-  closeModal.addEventListener("click", (event) => {
-    event.preventDefault();
-    modal.style.display = "none";
-  });
-  let modalBackgroung = document.getElementById("modal_backgroung");
-  
-
-  modalBackgroung.addEventListener("click", (event) => {
-    modal.style.display = "none";
-  });
+});

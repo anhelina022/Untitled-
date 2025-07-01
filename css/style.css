@@ -482,48 +482,48 @@ a {
 
 /* Футбол */
 
-.container_ball{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 36px;
+.container_ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
 }
-.footBall_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footBall_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.football_text{
-    margin: 0;
-    height: 20px;
-    font-family: 'Montserrat Alternates';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: left;
+.football_text {
+  margin: 0;
+  height: 20px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/fottball.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 720px;
-    height: 220px; 
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/fottball.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 720px;
+  height: 220px;
+  overflow: hidden;
 }
 .ball {
-    border-radius: 50%;
-    transition: all 0.5s ease;
-    position: absolute;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  position: absolute;
 }
-.ball-image{
-    width: 60px;
-    height: 60px;
+.ball-image {
+  width: 60px;
+  height: 60px;
 }
 
 /* Наша команда */
@@ -639,27 +639,7 @@ a {
   text-align: center;
 }
 
-.item-list2 {
-  border-radius: 20px;
-
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-  background: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  /* margin-bottom: 3px; */
-}
-.txt-item-list2 {
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat Alternates";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0%;
-  padding: 15px;
-}
-
 /* button */
-
 
 .for-list {
   display: flex;
@@ -672,6 +652,13 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-content: center;
+}
+
+.list3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .last-item {
@@ -681,31 +668,21 @@ a {
 
 .item-list2 {
   border-radius: 20px;
-
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   background: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  /* margin-bottom: 3px; */
+  padding: 10px 10px 10px 10px;
 }
+
 .txt-item-list2 {
   color: rgb(255, 255, 255);
-  font-family: 'Montserrat Alternates';
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0%;
-  padding: 15px;
+font-family: 'Montserrat Alternates';
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0%;
+/* text-align: right; */
 }
-.txt-item-listTwo{
-  color: rgb(255, 255, 255);
-  font-family: 'Montserrat Alternates';
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0%;
-  padding: 15px;
-}
+
 
 /* footer */
 
