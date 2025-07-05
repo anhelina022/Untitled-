@@ -528,90 +528,9 @@ a {
 
 /* Наша команда */
 
-.team-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 36px;
-}
 
-.prev,
-.next {
-  cursor: pointer;
-}
 
-.prev:hover,
-.next:hover {
-  text-decoration: none;
-  transition: 0.6s ease;
-}
-.text-fade {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-size: 15px;
-  text-align: center;
-  gap: 20px;
-}
-.name {
-  height: 17px;
-  font-family: "Montserrat Alternates";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin: 0;
-}
-.text_name {
-  width: 244px;
-  height: 15px;
-  font-family: "Montserrat Alternates";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0%;
-  text-align: center;
-  margin: 0;
-}
 
-.buttton_click_slide_box {
-  width: 10%;
-}
-
-.photo {
-  width: 100px;
-  height: 100px;
-}
-
-.style_dot {
-  gap: 2px;
-}
-.dot {
-  height: 2px;
-  width: 10px;
-}
-
-.imgForSlider {
-  width: 100px;
-  height: 100px;
-}
-.text_name {
-  width: 160px;
-}
-
-.active,
-.dot:hover,
-.dot:focus {
-  width: 12px;
-  height: 2px;
-}
-
-.buttton_click_slide_box {
-  width: 5%;
-  flex-wrap: nowrap;
-}
 
 /* Обери вченого/их */
 
@@ -687,8 +606,10 @@ letter-spacing: 0%;
 /* footer */
 
 .footer {
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding-bottom: 75px;
+  padding-top: 75px;
+  background-color: white;
 }
 
 .logo-footer {
@@ -697,57 +618,142 @@ letter-spacing: 0%;
   padding: 75px 0 0 175px;
 }
 
-.container-footer {
-  display: flex;
+.group {
+  width: 165px;
+height: 70px;
 }
 
-.text-footer {
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+
+}
+
+.itemListSecond {
   color: rgb(0, 0, 0);
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-weight: 400;
   line-height: 170%;
   letter-spacing: 0%;
-  padding: 61px 187px 58px 185px;
+  text-align: left;
+  /* margin: 61px 0 59px 0; */
 }
 
-.contacts-footer {
+.txtListThird {
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat Alternates';
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 7px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 25px;
+}
+.listThird li{
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 97px;
+  justify-content: center;
 }
-
-.contacts-li {
-  padding-right: 36px;
-}
-
-.input-footer {
-  color: rgb(126, 126, 126);
-  font-family: "Montserrat Alternates";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0%;
-  text-align: left;
+.inputs {
   border-radius: 20px;
+  margin-right: 35px;
+  box-shadow: none;
   background: rgb(215, 215, 215);
+  padding: 13px; 
+  width: 204px;
+  height: 35px;
   border: none;
-  padding: 10px 80px 10px 10px;
+}
+.buttons {
+  border-radius: 20px;
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  color: white;
+
+  transition: all 0.5s ease-out;
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+.buttons:hover, .buttons:focus{
+    animation: linear;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+
+    background-color: white;
+    color: black;
+    border-color: #000000;
+    transform: scale(0.99);
 }
 
-.button-footer {
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat Alternates";
-  font-size: 12px;
+#modal {
+  display: none;
+}
+#modal_backgroung {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: 90;
+}
+#modal_window {
+  position: fixed;
+  padding: 5px;
+  background: #ffffff;
+  width: 50%;
+  max-width: 100%;
+  min-height: 150px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  z-index: 99;
+}
+#modal_close {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  width: 25px;
+  height: 25px;
+  color: red;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+#modal_title {
+  text-align: center;
+  font-weight: bold;
+}
+#modal_text {
+  font: 14px Arial;
+}
+.for-modal {
+  display: flex;
+  justify-content: center;
+}
+.text-of-modal {
+  position: absolute;
+  margin-top: 50px;
+}
+.text-of-modal {
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat Alternates';
+  font-size: 16px;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
-  border-radius: 20px;
-  background: rgb(0, 0, 0);
-  width: 107px;
-  height: 35px;
 }
+
+
+
+
+/* dino */
 
 .comment {
   color: rgb(0, 0, 0);

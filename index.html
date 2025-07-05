@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -205,159 +209,104 @@
 
       <!-- Наша команда -->
 
-      <h3 class="text-main">Наша команда</h3>
-      <div class="team-container">
-        <div class="buttton_click_slide_box">
-          <a class="prev" onclick="plusSlides(-1)">
-            <img
-              class="imgForButton"
-              src="./images/right_button.svg"
-              alt="button"
-            />
-          </a>
-
-          <div class="use_box">
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/DONKEY.jpg"
-                alt="DONKEY"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name"></p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+      <!-- <div class="wrapper">
+        <h3 class="text-main">Наша команда</h3>
+        <div class="imege-slider swiper-container">
+          <div class="swiper-button-prev"></div>
+          <div class="imege-slider_wrapper swiper-wrapper">
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/DONKEY.jpg"
+                  alt="DONKEY"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/ВОЛК.jpg"
-                alt="ВОЛК"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">ВОЛК</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/ВОЛК.jpg"
+                  alt="ВОЛК"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/ДЖЕРРУ.jpg"
-                alt="ДЖЕРРУ"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">ДЖЕРРУ</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/ДЖЕРРУ.jpg"
+                  alt="ДЖЕРРУ"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/Дюдюка Барбидокская.jpg"
-                alt="/Дюдюка Барбидокская"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">Дюдюка Барбидокская</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/Дюдюка Барбидокская.jpg"
+                  alt="/Дюдюка Барбидокская"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/СОВУНЬЯ.jpg"
-                alt="СОВУНЬЯ"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">СОВУНЬЯ</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/СОВУНЬЯ.jpg"
+                  alt="СОВУНЬЯ"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/ТОМ.jpg"
-                alt="ТОМ"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">ТОМ</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/ТОМ.jpg"
+                  alt="ТОМ"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/чип и дейл.jpg"
-                alt="чип и дейл"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">чип и дейл</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/чип и дейл.jpg"
+                  alt="чип и дейл"
+                  class="photo"
+                />
               </div>
             </div>
 
-            <div class="mySlides fade">
-              <img
-                class="imgForSlider"
-                src="./img/perticipants/ЮЛИЙ.jpg"
-                alt="ЮЛИЙ"
-                class="photo"
-              />
-              <div class="text-fade">
-                <p class="name">ЮЛИЙ</p>
-                <p class="text_name">
-                  Інформація про роботу, яку він/вона виконав/ла
-                </p>
+            <div class="imege-slider_slide swiper-slide">
+              <div class="imege-slider_image">
+                <img
+                  class="imgForSlider"
+                  src="./img/perticipants/ЮЛИЙ.jpg"
+                  alt="ЮЛИЙ"
+                  class="photo"
+                />
               </div>
             </div>
-
-            <a class="next" onclick="plusSlides(1)">
-              <img
-                class="imgForButton"
-                src="./images/left_button.svg"
-                alt="button"
-              />
-            </a>
           </div>
 
-          <div class="style_dot" style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-          </div>
+          <div class="swiper-button-next"></div>
         </div>
-      </div>
+      </div> -->
+
       <hr class="line" />
 
       <h3 class="text-main">Обери вченого/их</h3>
@@ -425,46 +374,83 @@
         </ul>
 
         <ul class="list4">
-            <button class="item-list2" id="list9">
-              <p class="txt-item-list2">
-                1. Знайти вчених, в яких співпадають перші літери імені і
-                прізвища
-              </p>
-            </button>
+          <button class="item-list2" id="list9">
+            <p class="txt-item-list2">
+              1. Знайти вчених, в яких співпадають перші літери імені і прізвища
+            </p>
+          </button>
         </ul>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container-footer">
-        <img src="./img/Group 4.png" alt="logo" class="logo-footer" />
-        <p class="text-footer">
-          Тел: +38 (123) 456 78 90 <br />
-          E-Mail: codingmagic@gmail.com <br />
-          Facebook: CodingMagic <br />
-          Twitter: CodingMagic <br />
-          Instagram: CodingMagic
-        </p>
-        <ul class="contacts-footer">
-          <li class="contacts-li">
-            <input
-              type="text"
-              placeholder="Ваша ел. адреса..."
-              class="input-footer"
-            />
-          </li>
-          <li class="contacts-li">
-            <button class="button-footer">Підписатись</button>
-          </li>
-          <li class="contacts-li">
-            <p class="comment">
-              *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
-              сайті
-            </p>
-          </li>
-        </ul>
+        <ul class="listFirst firstlist">
+                <img src="./img/Group 4.svg" alt="Coading" class="group"/>
+              </ul>
+              <ul class="listSecond">
+                <li class="itemListSecond">
+                  <a href="#">Тел: +38 (123) 456 78 90</a>
+                </li>
+                <li class="itemListSecond">
+                  <a href="#"
+                    >E-Mail: codingmagic@gmail.com</a
+                  >
+                </li>
+                <li class="itemListSecond">
+                  <a href="#" 
+                    >Facebook: CodingMagic</a
+                  >
+                </li>
+                <li class="itemListSecond">
+                  <a href="#"
+                    >Twitter: CodingMagic</a
+                  >
+                </li>
+                <li class="itemListSecond">
+                  <a href="#"
+                    >Instagram: CodingMagic</a
+                  >
+                </li>
+              </ul>
+              <div>
+                <ul class="listThird">
+                  <li>
+                    <form action="" class="forms">
+                      <input
+                        class="inputs"
+                        type="email"
+                        placeholder="Ваша ел. адреса..."
+                      />
+                    </form>
+                      <button class="buttons">
+                        Підписатись
+                      </button>
+                    </form>
+                  </li>
+                </ul>
+                <p class="txtListThird">
+                  *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+                  сайті
+                </p>
+              </div>
+            </div>
+            <div id="modal">
+              <div id="modal_backgroung"></div>
+              <div id="modal_window">
+                <div id="modal_close">&#10006;</div>
+                <div id="modal_title"></div>
+                <div id="modal_text">
+                  <div class="for-modal">
+                    <img src="./danylo's images/messageThanks.png" alt="thanks"/>
+                    <p class="text-of-modal">Дякую за підписку!</p>
+                  </div>
+                </div>
+              </div>
+              
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
