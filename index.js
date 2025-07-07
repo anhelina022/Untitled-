@@ -278,12 +278,54 @@ function handleInput() {
 // Наша команда
 
 
-// new Swiper('.buttton_click_slide_box', {
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev'
-//   },
-// });
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+    console.log("Changing slide by: " + n);
+    showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    console.log("Setting current slide to: " + n);
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    let prev = document.querySelector('.prev');
+    let next = document.querySelector('.next');
+    
+    console.log("Showing slide: " + n);
+
+    if (n > slides.length) { slideIndex = slides.length; }
+    if (n < 1) { slideIndex = 1; }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "flex"; 
+    slides[slideIndex-1].style.justifyContent = "center"; 
+    slides[slideIndex-1].style.flexDirection = "column"; 
+    slides[slideIndex-1].style.alignItems = "center"; 
+    slides[slideIndex-1].style.gap = "20px"; 
+    dots[slideIndex-1].className += " active";
+
+    if (slideIndex === 1) {
+        prev.style.display = "block";
+    } else {
+        prev.style.display = "block";
+    }
+
+    if (slideIndex === slides.length) {
+        next.style.display = "block";
+    } else {
+        next.style.display = "block";
+    }
+}
 
 
 

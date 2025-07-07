@@ -528,7 +528,58 @@ a {
 
 /* Наша команда */
 
+.footer_miy{
+    background-color: white;
+    width: 80%;
+    padding-top: 36px;
+}
 
+.container_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.team-container {
+  flex-direction: column;
+}
+
+.buttton_click_slide_box{
+        width: 10%;
+    }
+
+    .prev, .next {
+    cursor: pointer;
+}
+
+.imgForButton{
+        width: 40px;
+        height: 40px;
+    }
+
+    .imgForSlider{
+        width: 100px;
+        height: 100px;
+    }
+
+    .text_name{
+        width: 160px;
+    }
+
+    .style_dot{
+        gap: 2px;
+    }
+    .dot{
+        height: 2px;
+        width: 10px;
+    }
+    .active, .dot:hover, .dot:focus{
+        width: 12px;
+        height: 2px;
+    }
 
 
 
