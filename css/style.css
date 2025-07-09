@@ -528,19 +528,19 @@ a {
 
 /* Наша команда */
 
-.section_miy{
-    background-color: white;
-    width: 60%;
-    padding-top: 36px;
-    padding-bottom: 36px;
+.section_miy {
+  background-color: white;
+  width: 60%;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
-.imgForSlider{
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
+.imgForSlider {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
 }
-.container_box{
+.container_box {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -548,114 +548,117 @@ a {
   align-items: center;
   gap: 36px;
 }
-.team-container{
+.team-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 36px;
 }
-.team-member{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.team-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.team-title{
-    margin: 0;
-    height: 20px;
-    font-family: 'Montserrat Alternates';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: left;
+.team-title {
+  margin: 0;
+  height: 20px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .slideshow-container {
-    width: 100%;
+  width: 100%;
 }
-.buttton_click_slide_box{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 100%;
+.buttton_click_slide_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100%;
 }
-.imgForButton{
-    overflow: hidden;
-    width: 50px;
-    height: 100px;
+.imgForButton {
+  overflow: hidden;
+  width: 50px;
+  height: 100px;
 }
-.prev, .next {
-    cursor: pointer;
+.prev,
+.next {
+  cursor: pointer;
 }
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   text-decoration: none;
   transition: 0.6s ease;
 }
 .text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 15px;
-    text-align: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+  gap: 20px;
 }
-.name{
-    height: 17px;
-    font-family: 'Montserrat Alternates';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0%;
-    text-align: center;
-    margin: 0;
+.name {
+  height: 17px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
 }
-.text_name{
-    width: 244px;
-    height: 15px;
-    font-family: 'Montserrat Alternates';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0%;
-    text-align: center;
-    margin: 0;
+.text_name {
+  width: 244px;
+  height: 15px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
 }
-.style_dot{
+.style_dot {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
 }
 .dot {
-    cursor: pointer;
-    height: 3px;
-    width: 18px;
-    background-color: #bbb;
-    display: inline-block;
-    border-radius: 3px;
-    transition: all 0.5s ease-out;
-    transform: scale(1);
-    transition-duration: 0.5s;
+  cursor: pointer;
+  height: 3px;
+  width: 18px;
+  background-color: #bbb;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.5s ease-out;
+  transform: scale(1);
+  transition-duration: 0.5s;
 }
-.active, .dot:hover, .dot:focus{
-    background-color: #717171;
-    animation: linear;
-    animation-duration: 0.3s;
-    animation-delay: 0.2s;
-    width: 25px;
-    height: 3px;
+.active,
+.dot:hover,
+.dot:focus {
+  background-color: #717171;
+  animation: linear;
+  animation-duration: 0.3s;
+  animation-delay: 0.2s;
+  width: 25px;
+  height: 3px;
 
-    background-color: #525252;
-    color: #fff;
-    border-color: #525252;
-    transform: scale(0.99);
+  background-color: #525252;
+  color: #fff;
+  border-color: #525252;
+  transform: scale(0.99);
 }
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-
 
 /* Обери вченого/их */
 
@@ -719,14 +722,13 @@ a {
 
 .txt-item-list2 {
   color: rgb(255, 255, 255);
-font-family: 'Montserrat Alternates';
-font-size: 12px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0%;
-/* text-align: right; */
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  /* text-align: right; */
 }
-
 
 /* footer */
 
@@ -745,7 +747,7 @@ letter-spacing: 0%;
 
 .group {
   width: 165px;
-height: 70px;
+  height: 70px;
 }
 
 .container-footer {
@@ -754,12 +756,11 @@ height: 70px;
   align-items: center;
   justify-content: space-around;
   background-color: white;
-
 }
 
 .itemListSecond {
   color: rgb(0, 0, 0);
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
   line-height: 170%;
@@ -770,7 +771,7 @@ height: 70px;
 
 .txtListThird {
   color: rgb(0, 0, 0);
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-size: 8px;
   font-weight: 400;
   line-height: 7px;
@@ -778,7 +779,7 @@ height: 70px;
   text-align: left;
   margin-top: 25px;
 }
-.listThird li{
+.listThird li {
   display: flex;
   justify-content: center;
 }
@@ -787,7 +788,7 @@ height: 70px;
   margin-right: 35px;
   box-shadow: none;
   background: rgb(215, 215, 215);
-  padding: 13px; 
+  padding: 13px;
   width: 204px;
   height: 35px;
   border: none;
@@ -802,15 +803,16 @@ height: 70px;
   transform: scale(1);
   transition-duration: 0.5s;
 }
-.buttons:hover, .buttons:focus{
-    animation: linear;
-    animation-duration: 0.3s;
-    animation-delay: 0.2s;
+.buttons:hover,
+.buttons:focus {
+  animation: linear;
+  animation-duration: 0.3s;
+  animation-delay: 0.2s;
 
-    background-color: white;
-    color: black;
-    border-color: #000000;
-    transform: scale(0.99);
+  background-color: white;
+  color: black;
+  border-color: #000000;
+  transform: scale(0.99);
 }
 
 #modal {
@@ -867,16 +869,13 @@ height: 70px;
 }
 .text-of-modal {
   color: rgb(0, 0, 0);
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
 }
-
-
-
 
 /* dino */
 
@@ -961,4 +960,104 @@ height: 70px;
   text-align: center;
   padding: 10px 10px;
   margin-right: 10px;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Черный фон с прозрачностью */
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  width: 576px;
+  height: 316px;
+  padding-top: 46px;
+  /* background-image: url("../danylo's images/messageThanks.png"); */
+}
+
+.input-modal {
+  width: 169px;
+  height: 35px;
+  border-radius: 20px;
+  background: rgb(215, 215, 215);
+
+  color: rgb(126, 126, 126);
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none;
+  padding: 10px 90px 10px 10px;
+  outline: red;
+  margin-bottom: 18px;
+}
+.modal-title {
+  color: rgb(0, 0, 0);
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  
+}
+
+.modal-text {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 18px;
+}
+
+.modal-btn {
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 105px;
+  height: 35px;
+  /* gap: 10; */
+  padding: 10px 20px 10px 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

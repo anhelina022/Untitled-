@@ -569,3 +569,70 @@ let buttonForModal = document.querySelector(".buttons");
   modalBackgroung.addEventListener("click", (event) => {
     modal.style.display = "none";
   });
+
+
+
+//   // Получаем элемент модального окна
+// var modal = document.getElementById("myModal");
+
+// // Получаем элемент <span>, который закрывает модальное окно
+// var span = document.getElementsByClassName("close")[0];
+
+// // Открываем модальное окно при загрузке страницы
+// window.onload = function() {
+//   modal.style.display = "block";
+// }
+
+// // Когда пользователь нажимает на <span> (кнопку закрытия), закрываем модальное окно
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // Закрываем модальное окно, если пользователь кликает вне модального окна
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+  // const modal = document.getElementById('myModal');
+  // const closeBtn = document.querySelector('.close');
+  // const saveBtn = document.getElementById('saveNameBtn');
+  // const nameInput = document.getElementById('usernameInput');
+  // const welcomeText = document.getElementById('welcomeText');
+
+  // function saveName() {
+  //   const userName = nameInput.value.trim();
+
+  //   if (userName) {
+  //     localStorage.setItem('userName', userName);
+  //     welcomeText.textContent = userName;
+  //     modal.style.display = 'none';
+  //   } else {
+  //     alert('Будь ласка, введіть ім’я!');
+  //   }
+  // }
+
+  // // Кнопка
+  // saveBtn.addEventListener('click', saveName);
+
+  // // Enter
+  // nameInput.addEventListener('keydown', function (e) {
+  //   if (e.key === 'Enter') saveName();
+  // });
+
+  // // Закрытие крестиком
+  // closeBtn.addEventListener('click', () => {
+  //   modal.style.display = 'none';
+  // });
+
+  // // Проверка при загрузке
+  // window.addEventListener('DOMContentLoaded', () => {
+  //   const savedName = localStorage.getItem('userName');
+  //   if (savedName) {
+  //     welcomeText.textContent = savedName;
+  //     modal.style.display = 'none';
+  //   } else {
+  //     modal.style.display = 'block';
+  //   }
+  // });

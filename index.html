@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
@@ -49,6 +52,23 @@
     </header>
 
     <main class="main">
+
+      <!-- Модальное окно -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="welcomeText">&times;</span>
+          <!-- <img src="./danylo's images/messageThanks.png" alt="thanks"/> -->
+          <p class="modal-title">Привіт! <br> Ви потрапили на сайт інтерактивних ігор та завдань <br> Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br> Бажаємо Вам гарно провести час!</p>
+          <p class="modal-text">Введіть своє ім’я:</p>
+          <input
+          class="input-modal"
+          placeholder="Ваше ім’я..."
+          id="userName"
+        />
+        <button class="modal-btn" id="saveName">Зберегти</button>
+        </div>
+      </div>
+
       <h2 class="title-main">Популярні інетрактивні ігри</h2>
       <hr class="line" />
 
@@ -206,97 +226,6 @@
       </p>
       <hr class="line" />
 
-
-      <!-- Наша команда -->
-
-      <!-- <div class="wrapper">
-        <h3 class="text-main">Наша команда</h3>
-        
-        <div class="team-container">   -->
-                    <!-- <div class="slideshow-container"> -->
-                        <!-- <div class="buttton_click_slide_box">
-                            <a class="prev" onclick="plusSlides(-1)">
-                                <img class="imgForButton" src="./images/right_button.svg" alt="button">
-                            </a>
-                            <div class="use_box">
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_1(1).jpg" alt="imgOleh">
-                                    <div class="text">
-                                        <p class="name">Oleh</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_2.jpg" alt="imgRick">
-                                    <div class="text">
-                                        <p class="name">Rick</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_3.jpg" alt="imgIhor">
-                                    <div class="text">
-                                        <p class="name">Ihor</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_4.jpg" alt="imgMorty">
-                                    <div class="text">
-                                        <p class="name">Morty</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_5.jpeg" alt="imgVasia">
-                                    <div class="text">
-                                        <p class="name">Vasia</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_6.jpg" alt="imgValera">
-                                    <div class="text">
-                                        <p class="name">Valera</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_7.jpg" alt="imgRomko">
-                                    <div class="text">
-                                        <p class="name">Romko</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <img class="imgForSlider" src="./images/student_8.webp" alt="imgDmytro">
-                                    <div class="text">
-                                        <p class="name">Dmytro</p>
-                                        <p class="text_name">Інформація про роботу, яку він/вона виконав/ла</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="next" onclick="plusSlides(1)">
-                                <img class="imgForButton" src="./images/left_button.svg" alt="button">
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="style_dot" style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                        <span class="dot" onclick="currentSlide(4)"></span> 
-                        <span class="dot" onclick="currentSlide(5)"></span> 
-                        <span class="dot" onclick="currentSlide(6)"></span> 
-                        <span class="dot" onclick="currentSlide(7)"></span> 
-                        <span class="dot" onclick="currentSlide(8)"></span> 
-                    </div>
-                    <div class="custom-image-container">
-                        <img class="line-image" src="./images/line.png" alt="line">
-                    </div>
-      </div>  -->
-
       <section class="section_miy">
             <div class="container_box">
                 <div class="team-member">
@@ -384,7 +313,6 @@
                     </div>
                 </div>        
         </section>
-
 
       <hr class="line" />
 
