@@ -528,12 +528,18 @@ a {
 
 /* Наша команда */
 
-.footer_miy{
+.section_miy{
     background-color: white;
-    width: 80%;
+    width: 60%;
     padding-top: 36px;
+    padding-bottom: 36px;
 }
-
+.imgForSlider{
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
 .container_box{
   width: 100%;
   display: flex;
@@ -542,45 +548,113 @@ a {
   align-items: center;
   gap: 36px;
 }
-
-.team-container {
-  flex-direction: column;
+.team-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
 }
-
+.team-member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-title{
+    margin: 0;
+    height: 20px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.slideshow-container {
+    width: 100%;
+}
 .buttton_click_slide_box{
-        width: 10%;
-    }
-
-    .prev, .next {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 100%;
+}
+.imgForButton{
+    overflow: hidden;
+    width: 50px;
+    height: 100px;
+}
+.prev, .next {
     cursor: pointer;
 }
+.prev:hover, .next:hover {
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    gap: 20px;
+}
+.name{
+    height: 17px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+}
+.text_name{
+    width: 244px;
+    height: 15px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+}
+.style_dot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.dot {
+    cursor: pointer;
+    height: 3px;
+    width: 18px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.active, .dot:hover, .dot:focus{
+    background-color: #717171;
+    animation: linear;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+    width: 25px;
+    height: 3px;
 
-.imgForButton{
-        width: 40px;
-        height: 40px;
-    }
-
-    .imgForSlider{
-        width: 100px;
-        height: 100px;
-    }
-
-    .text_name{
-        width: 160px;
-    }
-
-    .style_dot{
-        gap: 2px;
-    }
-    .dot{
-        height: 2px;
-        width: 10px;
-    }
-    .active, .dot:hover, .dot:focus{
-        width: 12px;
-        height: 2px;
-    }
-
+    background-color: #525252;
+    color: #fff;
+    border-color: #525252;
+    transform: scale(0.99);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
 
 /* Обери вченого/их */
