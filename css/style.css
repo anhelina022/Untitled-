@@ -40,12 +40,12 @@ a {
   display: flex;
   gap: 81px;
   height: 80px;
+  align-items: center;
 }
 
 .logo-header {
   width: 93px;
   height: 38.15px;
-  padding: 21px 0 20.85px 175px;
 }
 
 .navigation {
@@ -288,7 +288,6 @@ a {
   line-height: 15px;
   letter-spacing: 0%;
   text-align: right;
-  padding-left: 149px;
 }
 
 /*Камінь - ножиці - папір */
@@ -987,7 +986,11 @@ a {
   width: 576px;
   height: 316px;
   padding-top: 46px;
-  /* background-image: url("../danylo's images/messageThanks.png"); */
+  background-image: url("../danylo's images/messageThanks.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: 150px;
+  background-position-x: 100px;
 }
 
 .input-modal {
@@ -1060,4 +1063,11 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-law {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
